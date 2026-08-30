@@ -1,0 +1,155 @@
+export const profile = {
+  name: "Tomer Rajuan",
+  role: "Fullstack Engineer",
+  location: "Berlin, Germany",
+  email: "tomer.rajuan@klarna.com",
+  phone: "+49 176 43216376",
+  linkedin: "https://www.linkedin.com/in/tomer-rajuan-3406b0192/",
+  photo: "/tomer.jpg",
+  cv: "/Tomer-Rajuan-CV.pdf",
+  summary:
+    "I design and ship web products that hold up in the real world. High-traffic consumer features at Klarna, and digital public services for German ministries and foundations before that.",
+}
+
+export type Project = {
+  id: string
+  number: string
+  title: string
+  client: string
+  year: string
+  description: string
+  highlights: string[]
+  stack: string[]
+  href: string
+  hrefLabel?: string
+  image: string
+  imageAlt?: string
+}
+
+export const projects: Project[] = [
+  {
+    id: "elterngeld",
+    number: "01",
+    title: "ElterngeldDigital",
+    client: "Federal Ministry for Family Affairs",
+    year: "2020-2023",
+    description:
+      "Germany's main digital parental allowance application. I helped build the guided application flow, the public website redesign, and the path from paper forms to a working digital service for parents across federal states.",
+    highlights: [
+      "Step-by-step application with personalized questions, validation, and save-and-resume",
+      "Interfaces into state Elterngeld offices so completed applications can move into specialist systems",
+      "Tied into the Elterngeld calculator and planner, one of the most used online services in German administration",
+    ],
+    stack: ["TypeScript", "React", "Redux", "Accessibility", "Public-sector UX"],
+    href: "https://www.elterngeld-digital.de/ams/Elterngeld",
+    hrefLabel: "Open ElterngeldDigital",
+    image: "/previews/elterngeld.jpg",
+    imageAlt: "ElterngeldDigital application landing screens on tablet mockups",
+  },
+  {
+    id: "wegweiser",
+    number: "02",
+    title: "Wegweiser Kommune",
+    client: "Bertelsmann Stiftung",
+    year: "2021-2023",
+    description:
+      "Full redesign of the national municipal statistics platform. Cities, districts, and researchers can explore more than 350 indicators, build comparisons, and read the data on interactive maps.",
+    highlights: [
+      "React and Redux rebuild of a 15-year-old data portal used by thousands of German municipalities",
+      "Leaflet maps and chart views so demographic, finance, care, and education data can be compared in place",
+      "The relaunch received the German Design Award 2022 for Excellent Communications Design: Web",
+    ],
+    stack: ["TypeScript", "React", "Redux", "Leaflet", "Data visualization"],
+    href: "https://www.wegweiser-kommune.de/",
+    hrefLabel: "Open Wegweiser Kommune",
+    image: "/previews/wegweiser.jpg",
+    imageAlt: "Wegweiser Kommune homepage with municipal data hero",
+  },
+  {
+    id: "bayern",
+    number: "03",
+    title: "Mobility projects in Bavaria",
+    client: "Bavarian State Ministry for Digital Affairs",
+    year: "2021-2023",
+    description:
+      "An interactive map of autonomous driving, charging, public transport, and connected-mobility projects across Bavaria. Built so citizens, manufacturers, and the ministry can see what is being tested and where.",
+    highlights: [
+      "Leaflet with React and Redux, rendering GeoJSON highways, corridors, and clustered project sites",
+      "Filters for topic, district, place, and road category, with 37 projects across 73 locations",
+      "Project briefs on the map so a pin opens into context instead of a static list",
+    ],
+    stack: ["TypeScript", "React", "Redux", "Leaflet", "GeoJSON"],
+    href: "https://www.stmd.bayern.de/themen/mobilitaetsprojekte-in-bayern/",
+    hrefLabel: "Open the Bavaria map",
+    image: "/previews/bayern.jpg",
+    imageAlt: "Interactive Leaflet map of mobility projects across Bavaria",
+  },
+  {
+    id: "bmdv",
+    number: "04",
+    title: "Vorhabenübersicht",
+    client: "Federal Ministry for Transport",
+    year: "2022-2023",
+    description:
+      "The public map on beteiligung.bund.de. People can find federal rail, highway, waterway, and offshore projects across Germany, then open a procedure and take part in it.",
+    highlights: [
+      "OpenLayers map of live planning procedures, including North Sea and Baltic offshore sites",
+      "Filters for state, project type, and status, with a list view next to the map",
+      "Built so nearby projects surface first, and citizens can submit objections or statements",
+    ],
+    stack: ["JavaScript", "Vite", "OpenLayers"],
+    href: "https://beteiligung.bund.de/DE/VorhabenFindenUndBeteiligen/Karte/vorhabenuebersicht-karte.html",
+    hrefLabel: "Open the project map",
+    image: "/previews/beteiligung.jpg",
+    imageAlt: "Interactive OpenLayers map of federal infrastructure projects across Germany",
+  },
+]
+
+export const experience = [
+  {
+    company: "Klarna",
+    role: "Fullstack Engineer",
+    dates: "Oct 2023 - Present",
+    location: "Berlin",
+    points: [
+      "Lead client-facing work on products used by tens of millions of people, with a focus on availability and a calm user experience under peak traffic.",
+      "Own core services for Discounts and Referral Programs, from product design and compliance through delivery and performance work.",
+      "Design Kafka-based data sharing across teams, and close referral fraud patterns that were leaking money out of the system.",
+      "Mentor engineers, onboard joiners, and act as a primary technical contact for architecture decisions.",
+    ],
+    stack:
+      "TypeScript, Node.js, React, React Native, Kafka, AWS (DynamoDB, IAM), React Query, Express, Datadog, Jest, K6",
+  },
+  {
+    company: "init AG",
+    role: "Frontend Engineer",
+    dates: "Oct 2020 - Aug 2023",
+    location: "Berlin",
+    points: [
+      "Shipped digital public services for federal and state ministries and for Bertelsmann Stiftung.",
+      "Core work on ElterngeldDigital, Wegweiser Kommune, the Bavaria mobility map, and the federal participation map on beteiligung.bund.de.",
+      "Worked in multidisciplinary teams with design systems, accessibility, and heavy geospatial and statistics UIs.",
+    ],
+    stack:
+      "TypeScript, React, Redux, Leaflet, OpenLayers, GeoJSON, Vite, Atomic Design, Testing Library, Sass, Figma",
+  },
+]
+
+export const skills = [
+  {
+    label: "Languages",
+    items: ["TypeScript", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    label: "Product UI",
+    items: ["React", "React Native", "Redux", "React Query", "Leaflet", "OpenLayers"],
+  },
+  {
+    label: "Systems",
+    items: ["Node.js", "Express", "Kafka", "AWS", "DynamoDB"],
+  },
+  {
+    label: "Craft",
+    items: ["System design", "Performance", "Accessibility", "Mentoring", "Figma"],
+  },
+]
