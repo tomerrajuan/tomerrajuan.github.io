@@ -24,12 +24,15 @@ export type Project = {
   hrefLabel?: string
   image: string
   imageAlt?: string
+  video?: string
+  videoMp4?: string
+  personal?: boolean
 }
 
 export const projects: Project[] = [
   {
     id: "elterngeld",
-    number: "01",
+    number: "02",
     title: "ElterngeldDigital",
     client: "Federal Ministry for Family Affairs",
     year: "2020-2023",
@@ -44,11 +47,12 @@ export const projects: Project[] = [
     href: "https://www.elterngeld-digital.de/ams/Elterngeld",
     hrefLabel: "Open ElterngeldDigital",
     image: "/previews/elterngeld.jpg",
-    imageAlt: "ElterngeldDigital application landing screens on tablet mockups",
+    imageAlt: "Elterngeldrechner mit Planer on familienportal.de",
+    video: "/previews/elterngeldrechner.webm",
   },
   {
     id: "wegweiser",
-    number: "02",
+    number: "03",
     title: "Wegweiser Kommune",
     client: "Bertelsmann Stiftung",
     year: "2021-2023",
@@ -63,11 +67,12 @@ export const projects: Project[] = [
     href: "https://www.wegweiser-kommune.de/",
     hrefLabel: "Open Wegweiser Kommune",
     image: "/previews/wegweiser.jpg",
-    imageAlt: "Wegweiser Kommune homepage with municipal data hero",
+    imageAlt: "Wegweiser Kommune demographic map of German municipalities",
+    video: "/previews/wegweiser.webm",
   },
   {
     id: "bayern",
-    number: "03",
+    number: "04",
     title: "Mobility projects in Bavaria",
     client: "Bavarian State Ministry for Digital Affairs",
     year: "2021-2023",
@@ -83,10 +88,11 @@ export const projects: Project[] = [
     hrefLabel: "Open the Bavaria map",
     image: "/previews/bayern.jpg",
     imageAlt: "Interactive Leaflet map of mobility projects across Bavaria",
+    video: "/previews/bayern.webm",
   },
   {
     id: "bmdv",
-    number: "04",
+    number: "05",
     title: "Vorhabenübersicht",
     client: "Federal Ministry for Transport",
     year: "2022-2023",
@@ -102,6 +108,29 @@ export const projects: Project[] = [
     hrefLabel: "Open the project map",
     image: "/previews/beteiligung.jpg",
     imageAlt: "Interactive OpenLayers map of federal infrastructure projects across Germany",
+    video: "/previews/beteiligung.webm",
+  },
+  {
+    id: "cleargifting",
+    number: "01",
+    title: "Clear Gifting",
+    client: "Independent product",
+    year: "2026",
+    description:
+      "A gift-amount calculator for real occasions. It turns etiquette, the relationship, and the region into a concrete range, so people stop guessing what to give at a wedding, birthday, or Christmas.",
+    highlights: [
+      "Occasion flows for weddings, birthdays, Christmas, baptisms, and more, with country-specific rules for Germany, Austria, and Switzerland",
+      "Live result that updates as you answer, including travel, group gifts, and what you have already spent",
+      "Anonymous and free, with local guidelines instead of a generic worldwide average",
+    ],
+    stack: ["TypeScript", "Next.js", "React", "Tailwind", "next-intl"],
+    href: "https://www.cleargifting.com/de/",
+    hrefLabel: "Open Clear Gifting",
+    image: "/previews/cleargifting.jpg",
+    imageAlt: "Clear Gifting homepage with gift amount calculators for every occasion",
+    video: "/previews/cleargifting.webm",
+    videoMp4: "/previews/cleargifting.mp4",
+    personal: true,
   },
 ]
 
