@@ -60,7 +60,7 @@ export function Hero() {
               <ArrowDown size={16} />
             </a>
             <a
-              href={`mailto:${profile.email}`}
+              href="#contact"
               className="inline-flex items-center rounded-full border border-line bg-cream px-5 py-3 text-sm text-ink transition-transform hover:-translate-y-0.5"
             >
               Get in touch
