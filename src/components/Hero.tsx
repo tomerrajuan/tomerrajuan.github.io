@@ -35,7 +35,7 @@ export function Hero() {
           </motion.p>
 
           <motion.h1
-            className="mt-5 max-w-4xl text-5xl font-semibold leading-[1.05] tracking-[-0.05em] text-ink sm:mt-6 sm:text-7xl lg:text-8xl"
+            className="mt-5 max-w-4xl text-5xl font-semibold leading-[1.05] tracking-[-0.05em] text-ink sm:mt-6 sm:text-7xl lg:text-[5.5rem]"
             variants={reduce ? undefined : fadeUp(0.05)}
           >
             Products for millions. Public services for everyone.
