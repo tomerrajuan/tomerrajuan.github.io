@@ -12,6 +12,17 @@
   --color-accent-soft: #dbe7ff;
 }
 
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --color-ink: #f1f4fa;
+  --color-muted: #a6afbf;
+  --color-line: #343d4c;
+  --color-paper: #10151e;
+  --color-cream: #1a2230;
+  --color-accent: #8ab4ff;
+  --color-accent-soft: #223450;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5.5rem;

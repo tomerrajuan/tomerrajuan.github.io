@@ -36,9 +36,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
   return (
     <Reveal>
-      <article className="grid items-center gap-8 border-t border-line py-24 lg:grid-cols-12 lg:gap-12">
+      <article className="grid items-center gap-8 border-t border-line py-16 sm:py-20 lg:grid-cols-12 lg:gap-12">
         <div
-          className={`lg:col-span-7 ${flipped ? "lg:order-2" : ""}`}
+          className={`lg:col-span-6 ${flipped ? "lg:order-2" : ""}`}
         >
           <a
             href={project.href}
@@ -50,7 +50,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           </a>
         </div>
 
-        <div className={`lg:col-span-5 ${flipped ? "lg:order-1" : ""}`}>
+        <div className={`lg:col-span-6 ${flipped ? "lg:order-1" : ""}`}>
           <p className="text-sm text-muted">
             {project.client}
           </p>

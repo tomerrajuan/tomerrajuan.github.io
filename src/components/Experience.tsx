@@ -43,21 +43,41 @@ export function Experience() {
         </div>
       </div>
 
-      <div className="mx-auto mt-8 max-w-6xl border-t border-line pt-16">
-        <Reveal>
-          <p className="text-sm uppercase tracking-[0.22em] text-muted">
-            How I work
-          </p>
-        </Reveal>
-        <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    </section>
+  )
+}
+
+export function HowIWork() {
+  return (
+    <section className="bg-accent-soft/70 px-6 py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-12 lg:gap-16">
+        <div className="lg:col-span-4">
+          <Reveal>
+            <p className="text-sm uppercase tracking-[0.22em] text-accent">
+              Capabilities
+            </p>
+            <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em]">
+              How I work
+            </h2>
+          </Reveal>
+        </div>
+
+        <div className="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:col-span-8">
           {skills.map((group) => (
             <Reveal key={group.label}>
-              <h3 className="text-sm font-medium text-ink">{group.label}</h3>
-              <ul className="mt-3 space-y-1 text-sm text-muted">
-                {group.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+              <article className="h-full border-t border-ink/15 pt-5">
+                <h3 className="text-lg font-medium text-ink">{group.label}</h3>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <li
+                      key={item}
+                      className="rounded border border-ink/10 bg-cream/60 px-2.5 py-1.5 text-sm text-ink/80"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
             </Reveal>
           ))}
         </div>

@@ -8,7 +8,7 @@ export const profile = {
   photo: "/tomer.jpg",
   cv: "/Tomer-Rajuan-CV.pdf",
   summary:
-    "I design and ship web products that hold up in the real world. High-traffic consumer features at Klarna, and digital public services for German ministries and foundations before that.",
+    "At Klarna, I build consumer features for tens of millions of people. Before that, I shipped digital public services for German ministries and foundations.",
 };
 
 export type Project = {
@@ -41,7 +41,6 @@ export const projects: Project[] = [
     highlights: [
       "Step-by-step application with personalized questions, validation, and save-and-resume",
       "Interfaces into state Elterngeld offices so completed applications can move into specialist systems",
-      "Tied into the Elterngeld calculator and planner, one of the most used online services in German administration",
     ],
     stack: [
       "TypeScript",
@@ -66,7 +65,6 @@ export const projects: Project[] = [
       "Full redesign of the national municipal statistics platform. Cities, districts, and researchers can explore more than 350 indicators, build comparisons, and read the data on interactive maps.",
     highlights: [
       "React and Redux rebuild of a 15-year-old data portal used by thousands of German municipalities",
-      "Leaflet maps and chart views so demographic, finance, care, and education data can be compared in place",
       "The relaunch received the German Design Award 2022 for Excellent Communications Design: Web",
     ],
     stack: ["TypeScript", "React", "Redux", "Leaflet", "Data visualization"],
@@ -85,7 +83,6 @@ export const projects: Project[] = [
     description:
       "An interactive map of autonomous driving, charging, public transport, and connected-mobility projects across Bavaria. Built so citizens, manufacturers, and the ministry can see what is being tested and where.",
     highlights: [
-      "Leaflet with React and Redux, rendering GeoJSON highways, corridors, and clustered project sites",
       "Filters for topic, district, place, and road category, with 37 projects across 73 locations",
       "Project briefs on the map so a pin opens into context instead of a static list",
     ],
@@ -106,7 +103,6 @@ export const projects: Project[] = [
       "The public map on beteiligung.bund.de. People can find federal rail, highway, waterway, and offshore projects across Germany, then open a procedure and take part in it.",
     highlights: [
       "OpenLayers map of live planning procedures, including North Sea and Baltic offshore sites",
-      "Filters for state, project type, and status, with a list view next to the map",
       "Built so nearby projects surface first, and citizens can submit objections or statements",
     ],
     stack: ["JavaScript", "Vite", "OpenLayers"],
@@ -128,7 +124,6 @@ export const projects: Project[] = [
     highlights: [
       "Occasion flows for weddings, birthdays, Christmas, baptisms, and more, with country-specific rules for different markets",
       "Live result that updates as you answer, including travel, group gifts, and what you have already spent",
-      "Anonymous and free, with local guidelines instead of a generic worldwide average",
     ],
     stack: ["TypeScript", "Next.js", "React", "Tailwind", "next-intl"],
     href: "https://www.cleargifting.com/de/",
@@ -151,7 +146,6 @@ export const projects: Project[] = [
     highlights: [
       "Custom name lists and fair shuffling flows, ensuring completely unbiased and random selections every time",
       "Live global draw counters powered by a serverless Upstash Redis backend, tracking total draws made by users worldwide",
-      "Anonymous, fast, and free utility with zero setup or registration required for participants",
     ],
     stack: [
       "TypeScript",
@@ -204,7 +198,7 @@ export const experience = [
 
 export const skills = [
   {
-    label: "Languages",
+    label: "Web foundations",
     items: ["TypeScript", "JavaScript", "HTML", "CSS"],
   },
   {
@@ -216,20 +210,30 @@ export const skills = [
       "React Query",
       "Leaflet",
       "OpenLayers",
+      "Accessibility",
     ],
   },
   {
-    label: "Systems",
-    items: ["Node.js", "Express", "Kafka", "AWS", "DynamoDB"],
+    label: "Systems & scale",
+    items: [
+      "Node.js",
+      "Express",
+      "Kafka",
+      "Event-driven systems",
+      "AWS",
+      "DynamoDB",
+      "Reliability & performance",
+    ],
   },
   {
-    label: "Craft",
+    label: "Product & leadership",
     items: [
+      "Product ownership",
+      "End-to-end delivery",
+      "Cross-functional collaboration",
       "System design",
-      "Performance",
-      "Accessibility",
       "Mentoring",
-      "Figma",
+      "Fraud prevention",
     ],
   },
 ];

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import { Moon, Sun } from "lucide-react"
 import { profile } from "../data"
+import { applyTheme, type Theme } from "../theme"
 
 const links = [
   { href: "#experience", label: "Experience" },
@@ -11,6 +13,9 @@ const links = [
 export function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [hidden, setHidden] = useState(false)
+  const [theme, setCurrentTheme] = useState<Theme>(() =>
+    document.documentElement.dataset.theme === "dark" ? "dark" : "light",
+  )
 
   useEffect(() => {
     let last = window.scrollY
@@ -58,12 +63,28 @@ export function Nav() {
             </a>
           ))}
         </nav>
-        <a
-          href={`mailto:${profile.email}`}
-          className="rounded-full bg-ink px-4 py-2 text-sm text-cream transition-transform hover:-translate-y-0.5"
-        >
-          Email
-        </a>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            aria-label="Toggle color theme"
+            aria-pressed={theme === "dark"}
+            title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+            onClick={() => {
+              const nextTheme = theme === "dark" ? "light" : "dark"
+              applyTheme(nextTheme)
+              setCurrentTheme(nextTheme)
+            }}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-cream text-ink transition-colors hover:bg-accent-soft focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+          <a
+            href={`mailto:${profile.email}`}
+            className="rounded-full bg-ink px-4 py-2 text-sm text-cream transition-transform hover:-translate-y-0.5"
+          >
+            Email
+          </a>
+        </div>
       </div>
     </motion.header>
   )
