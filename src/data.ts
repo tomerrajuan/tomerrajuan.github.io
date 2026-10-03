@@ -9,25 +9,25 @@ export const profile = {
   cv: "/Tomer-Rajuan-CV.pdf",
   summary:
     "I design and ship web products that hold up in the real world. High-traffic consumer features at Klarna, and digital public services for German ministries and foundations before that.",
-}
+};
 
 export type Project = {
-  id: string
-  number: string
-  title: string
-  client: string
-  year: string
-  description: string
-  highlights: string[]
-  stack: string[]
-  href: string
-  hrefLabel?: string
-  image: string
-  imageAlt?: string
-  video?: string
-  videoMp4?: string
-  personal?: boolean
-}
+  id: string;
+  number: string;
+  title: string;
+  client: string;
+  year: string;
+  description: string;
+  highlights: string[];
+  stack: string[];
+  href: string;
+  hrefLabel?: string;
+  image: string;
+  imageAlt?: string;
+  video?: string;
+  videoMp4?: string;
+  personal?: boolean;
+};
 
 export const projects: Project[] = [
   {
@@ -43,7 +43,13 @@ export const projects: Project[] = [
       "Interfaces into state Elterngeld offices so completed applications can move into specialist systems",
       "Tied into the Elterngeld calculator and planner, one of the most used online services in German administration",
     ],
-    stack: ["TypeScript", "React", "Redux", "Accessibility", "Public-sector UX"],
+    stack: [
+      "TypeScript",
+      "React",
+      "Redux",
+      "Accessibility",
+      "Public-sector UX",
+    ],
     href: "https://www.elterngeld-digital.de/ams/Elterngeld",
     hrefLabel: "Open ElterngeldDigital",
     image: "/previews/elterngeld.jpg",
@@ -107,7 +113,8 @@ export const projects: Project[] = [
     href: "https://beteiligung.bund.de/DE/VorhabenFindenUndBeteiligen/Karte/vorhabenuebersicht-karte.html",
     hrefLabel: "Open the project map",
     image: "/previews/beteiligung.jpg",
-    imageAlt: "Interactive OpenLayers map of federal infrastructure projects across Germany",
+    imageAlt:
+      "Interactive OpenLayers map of federal infrastructure projects across Germany",
     video: "/previews/beteiligung.webm",
   },
   {
@@ -119,7 +126,7 @@ export const projects: Project[] = [
     description:
       "A gift-amount calculator for real occasions. It turns etiquette, the relationship, and the region into a concrete range, so people stop guessing what to give at a wedding, birthday, or Christmas.",
     highlights: [
-      "Occasion flows for weddings, birthdays, Christmas, baptisms, and more, with country-specific rules for Germany, Austria, and Switzerland",
+      "Occasion flows for weddings, birthdays, Christmas, baptisms, and more, with country-specific rules for different markets",
       "Live result that updates as you answer, including travel, group gifts, and what you have already spent",
       "Anonymous and free, with local guidelines instead of a generic worldwide average",
     ],
@@ -127,12 +134,43 @@ export const projects: Project[] = [
     href: "https://www.cleargifting.com/de/",
     hrefLabel: "Open Clear Gifting",
     image: "/previews/cleargifting.jpg",
-    imageAlt: "Clear Gifting homepage with gift amount calculators for every occasion",
+    imageAlt:
+      "Clear Gifting homepage with gift amount calculators for every occasion",
     video: "/previews/cleargifting.webm",
     videoMp4: "/previews/cleargifting.mp4",
     personal: true,
   },
-]
+  {
+    id: "names-lottery",
+    number: "02",
+    title: "Names Lottery",
+    client: "Independent Product",
+    year: "2026",
+    description:
+      "A fair, interactive name picker and group generator for teams, classrooms and other events. It removes the friction from random draws, chores, or gift exchanges with a fast, real-time interface.",
+    highlights: [
+      "Custom name lists and fair shuffling flows, ensuring completely unbiased and random selections every time",
+      "Live global draw counters powered by a serverless Upstash Redis backend, tracking total draws made by users worldwide",
+      "Anonymous, fast, and free utility with zero setup or registration required for participants",
+    ],
+    stack: [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "Tailwind",
+      "Upstash Redis",
+      "Vercel",
+    ],
+    href: "https://www.names-lottery.com/",
+    hrefLabel: "Open Names Lottery",
+    image: "/previews/names-lottery.jpg",
+    imageAlt:
+      "Names Lottery homepage with random name picker and live global draw counters",
+    video: "/previews/names-lottery.webm",
+    videoMp4: "/previews/names-lottery.mp4",
+    personal: true,
+  },
+];
 
 export const experience = [
   {
@@ -162,7 +200,7 @@ export const experience = [
     stack:
       "TypeScript, React, Redux, Leaflet, OpenLayers, GeoJSON, Vite, Atomic Design, Testing Library, Sass, Figma",
   },
-]
+];
 
 export const skills = [
   {
@@ -171,7 +209,14 @@ export const skills = [
   },
   {
     label: "Product UI",
-    items: ["React", "React Native", "Redux", "React Query", "Leaflet", "OpenLayers"],
+    items: [
+      "React",
+      "React Native",
+      "Redux",
+      "React Query",
+      "Leaflet",
+      "OpenLayers",
+    ],
   },
   {
     label: "Systems",
@@ -179,6 +224,12 @@ export const skills = [
   },
   {
     label: "Craft",
-    items: ["System design", "Performance", "Accessibility", "Mentoring", "Figma"],
+    items: [
+      "System design",
+      "Performance",
+      "Accessibility",
+      "Mentoring",
+      "Figma",
+    ],
   },
-]
+];
