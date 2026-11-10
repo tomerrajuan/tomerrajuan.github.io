@@ -54,6 +54,7 @@ export const projects: Project[] = [
     image: "/previews/elterngeld.jpg",
     imageAlt: "Elterngeldrechner mit Planer on familienportal.de",
     video: "/previews/elterngeldrechner.webm",
+    videoMp4: "/previews/elterngeldrechner.mp4",
   },
   {
     id: "wegweiser",
@@ -73,6 +74,7 @@ export const projects: Project[] = [
     image: "/previews/wegweiser.jpg",
     imageAlt: "Wegweiser Kommune demographic map of German municipalities",
     video: "/previews/wegweiser.webm",
+    videoMp4: "/previews/wegweiser.mp4",
   },
   {
     id: "bayern",
@@ -92,6 +94,7 @@ export const projects: Project[] = [
     image: "/previews/bayern.jpg",
     imageAlt: "Interactive Leaflet map of mobility projects across Bavaria",
     video: "/previews/bayern.webm",
+    videoMp4: "/previews/bayern.mp4",
   },
   {
     id: "bmdv",
@@ -112,6 +115,7 @@ export const projects: Project[] = [
     imageAlt:
       "Interactive OpenLayers map of federal infrastructure projects across Germany",
     video: "/previews/beteiligung.webm",
+    videoMp4: "/previews/beteiligung.mp4",
   },
   {
     id: "cleargifting",
@@ -129,8 +133,7 @@ export const projects: Project[] = [
     href: "https://www.cleargifting.com/de/",
     hrefLabel: "Open Clear Gifting",
     image: "/previews/cleargifting.jpg",
-    imageAlt:
-      "Clear Gifting homepage with gift amount calculators for every occasion",
+    imageAlt: "Clear Gifting Christmas calculator with a live gift-amount range",
     video: "/previews/cleargifting.webm",
     videoMp4: "/previews/cleargifting.mp4",
     personal: true,

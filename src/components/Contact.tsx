@@ -27,17 +27,23 @@ export function Contact() {
               {profile.email}
             </a>
             <a
+              href={`tel:${profile.phone.replace(/\s/g, "")}`}
+              className="inline-flex items-center gap-2 rounded-full border border-cream/40 px-5 py-3 text-sm text-cream transition-transform hover:-translate-y-0.5"
+            >
+              {profile.phone}
+            </a>
+            <a
               href={profile.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-cream/20 px-5 py-3 text-sm text-cream transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-full border border-cream/40 px-5 py-3 text-sm text-cream transition-transform hover:-translate-y-0.5"
             >
               LinkedIn
               <ArrowUpRight size={14} />
             </a>
             <a
               href={profile.cv}
-              className="inline-flex items-center gap-2 rounded-full border border-cream/20 px-5 py-3 text-sm text-cream transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-full border border-cream/40 px-5 py-3 text-sm text-cream transition-transform hover:-translate-y-0.5"
             >
               <FileText size={16} />
               CV
@@ -56,7 +62,9 @@ export function Footer() {
         <p>
           {profile.name} · {profile.location}
         </p>
-        <p>{profile.phone}</p>
+        <a href={`tel:${profile.phone.replace(/\s/g, "")}`} className="hover:text-ink">
+          {profile.phone}
+        </a>
       </div>
     </footer>
   )

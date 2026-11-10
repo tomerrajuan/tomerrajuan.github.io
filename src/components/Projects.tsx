@@ -36,7 +36,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
   return (
     <Reveal>
-      <article className="grid items-center gap-8 border-t border-line py-16 sm:py-20 lg:grid-cols-12 lg:gap-12">
+      <article className="grid items-center gap-8 border-t border-line py-12 sm:py-16 lg:grid-cols-12 lg:gap-14">
         <div
           className={`lg:col-span-6 ${flipped ? "lg:order-2" : ""}`}
         >
@@ -44,7 +44,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             href={project.href}
             target="_blank"
             rel="noreferrer"
-            className="group block overflow-hidden rounded-[1.5rem] border border-line bg-cream shadow-[0_20px_60px_rgba(20,19,17,0.08)]"
+            className="group block overflow-hidden rounded-[1.5rem] border border-line bg-cream shadow-[0_18px_50px_rgba(11,13,18,0.08)]"
           >
             <ProjectPreview project={project} />
           </a>
@@ -52,6 +52,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
         <div className={`lg:col-span-6 ${flipped ? "lg:order-1" : ""}`}>
           <p className="text-sm text-muted">
+            <span className="text-ink">{project.year}</span>
+            <span className="px-2 text-muted/50">·</span>
             {project.client}
           </p>
           <h3 className="mt-3 text-4xl font-semibold tracking-[-0.04em] text-ink">
@@ -100,7 +102,7 @@ const personalProjects = projects.filter((project) => project.personal)
 
 export function Projects() {
   return (
-    <section id="work" className="scroll-mt-28 px-6 pt-10">
+    <section id="work" className="scroll-mt-28 px-6 pt-16 sm:pt-20">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="text-sm uppercase tracking-[0.22em] text-muted">

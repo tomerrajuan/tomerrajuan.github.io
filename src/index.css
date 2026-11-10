@@ -14,13 +14,13 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --color-ink: #f1f4fa;
-  --color-muted: #a6afbf;
-  --color-line: #343d4c;
-  --color-paper: #10151e;
-  --color-cream: #1a2230;
-  --color-accent: #8ab4ff;
-  --color-accent-soft: #223450;
+  --color-ink: #f3f6fb;
+  --color-muted: #b7c0d0;
+  --color-line: #465066;
+  --color-paper: #0e131c;
+  --color-cream: #1a2332;
+  --color-accent: #9ec2ff;
+  --color-accent-soft: #1a2d4a;
 }
 
 html {
