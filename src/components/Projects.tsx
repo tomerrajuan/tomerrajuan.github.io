@@ -102,7 +102,7 @@ const personalProjects = projects.filter((project) => project.personal)
 
 export function Projects() {
   return (
-    <section id="work" className="scroll-mt-28 px-6 pt-16 sm:pt-20">
+    <section id="work" className="px-6 pt-16 sm:pt-20">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <p className="text-sm uppercase tracking-[0.22em] text-muted">

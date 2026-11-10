@@ -4,7 +4,7 @@ import { Reveal } from "../motion"
 
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-28 px-6 pb-10">
+    <section id="contact" className="px-6 pb-10">
       <Reveal>
         <div className="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-ink px-8 py-16 text-cream sm:px-14 sm:py-20">
           <p className="text-sm uppercase tracking-[0.22em] text-cream/60">

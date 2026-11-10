@@ -26,7 +26,7 @@ export function Hero() {
   const reduce = useReducedMotion()
 
   return (
-    <section className="relative px-6 pb-8 pt-28 sm:pb-12 sm:pt-36">
+    <section className="relative px-6 pb-8 pt-8 sm:pb-12 sm:pt-12">
       <motion.div
         className="relative mx-auto grid w-full max-w-6xl items-center gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16"
         variants={reduce ? undefined : stagger}

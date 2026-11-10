@@ -21,7 +21,7 @@ function stackItems(stack: string) {
 
 export function Experience() {
   return (
-    <section id="experience" className="scroll-mt-28 px-6 py-20 sm:py-24">
+    <section id="experience" className="px-6 py-20 sm:py-24">
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-4">
           <Reveal>
